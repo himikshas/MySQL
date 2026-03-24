@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<title>Registration Form</title>
+
+	<!-- Link external JavaScript file -->
+	<script src="form_files/script_form.js"></script>
+</head>
+
+<body>
+
+	<h2>User Registration Form </h2>
+
+    <form onsubmit="return validateForm()">
+    	
+
+    	<!-- Name -->
+    	<label>
+    		NAME:
+    	</label>
+    	<input type="text" id="name" placeholder="Name">
+    	<br><br>
+
+        <!-- Email -->
+    	<label>
+    	   EMAIL:
+    	</label>
+    	<input type="text" id="email" value="hs@gmail.com">
+    	<br><br>
+
+        <!-- Password -->
+    	<label>PASSWORD:</label>
+    	<input type="password" name="password" id="password" required="">
+    	<br><br>
+
+        <!-- Confirm Password -->
+    	<label>CONFIRM PASSWORD:</label>
+    	<input type="password" name="confirm_password" id="confirm_password" required="">
+    	<br><br>
+
+        <!-- Category -->
+    	<label>CATEGORY:</label>
+    	<input type="radio" name="category" id="student" value="student" onclick="toggleSalary()"> Student
+    	<input type="radio" name="category" id="professional" value="professional" onclick="toggleSalary()"> Professional
+    	<br><br>
+
+    	<!-- Salary (Hidden) -->
+        <div id="salaryDiv" style="display:none;">
+           <label>Salary:</label>
+           <input type="number" id="salary">
+           <br><br>
+        </div>
+
+        <!-- Date of Birth -->
+    	<label>DATE OF BIRTH:</label>
+    	<input type="date" name="date" id="date">
+    	<br><br>
+
+        <!-- State -->
+    	<label>STATE:</label>
+    	<select name="state" id="state">
+    		<option selected="selected">Andhra Pradesh</option>
+    		<option>Arunachal Pradesh</option>
+    		<option>Karnataka</option>
+    		<option>Tamil Nadu</option>
+    		<option>Kerala</option>
+    		<option>Rajasthan</option>
+    		<option>Maharashtra</option>
+    		<option>Madhya Pradesh</option>
+    		<option>Harayana</option>
+    		<option>Uttar Pradesh</option>
+    		<option>Bihar</option>
+    	</select>
+    	<br><br>
+
+        <!-- Comments -->
+    	<label>COMMENTS:</label>
+    	<textarea type="text" name="comment" id="comment" rows="4" cols="30"> </textarea>
+    	<br><br>
+
+        <!-- Terms and Conditions -->
+    	<input type="checkbox" id="terms">
+        <label for="terms">I agree to the Terms and Conditions</label>
+        <br><br>
+
+    <input type="submit" value="Register">
+
+    <input type="reset" value="Reset" onclick="resetForm()">
+
+</form>
+
+
+</body></html>
