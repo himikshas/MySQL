@@ -48,12 +48,12 @@ Desc Book_issues;
 -- Create Student Table
 
 CREATE TABLE Student (
-    -> StudentID int PRIMARY KEY,
-    -> Student_Name varchar(100) NOT NULL,
-    -> Department varchar(100) NOT NULL,
-    -> Email varchar(100) NOT NULL,
-    -> DOB date NOT NULL
-    -> );
+    StudentID int PRIMARY KEY,
+    Student_Name varchar(100) NOT NULL,
+    Department varchar(100) NOT NULL,
+    Email varchar(100) NOT NULL,
+    DOB date NOT NULL
+    );
 
 Desc Student;
 
@@ -63,16 +63,16 @@ Desc Student;
 -- Insert entries in Books table
 
 INSERT INTO Books (BookID, Book_Name, Publisher, Year) VALUES
-    -> (1, 'Rich Dad Poor Dad', 'Robert Kiyosaki', 1997),
-    -> (2, 'Atomic Habits', 'Avery', 2018),
-    -> (3, 'The Psychology of Money', 'Harriman House', 2020),
-    -> (4, 'Sapiens', 'Harvill Secker', 2011),
-    -> (5, 'Deep Work', 'Grand Central Publishing', 2016),
-    -> (6, 'The Power of Habit', 'Random House', 2012),
-    -> (7, 'Thinking, Fast and Slow', 'Farrar, Straus and Giroux', 2011),
-    -> (8, 'Ikigai', 'Penguin Life', 2016),
-    -> (9, 'Wings of Fire', 'Universities Press', 1999),
-    -> (10, 'Never Lie', 'Independently Published', 2022);
+    (1, 'Rich Dad Poor Dad', 'Robert Kiyosaki', 1997),
+    (2, 'Atomic Habits', 'Avery', 2018),
+    (3, 'The Psychology of Money', 'Harriman House', 2020),
+    (4, 'Sapiens', 'Harvill Secker', 2011),
+    (5, 'Deep Work', 'Grand Central Publishing', 2016),
+    (6, 'The Power of Habit', 'Random House', 2012),
+    (7, 'Thinking, Fast and Slow', 'Farrar, Straus and Giroux', 2011),
+    (8, 'Ikigai', 'Penguin Life', 2016),
+    (9, 'Wings of Fire', 'Universities Press', 1999),
+    (10, 'Never Lie', 'Independently Published', 2022);
 
 
 
@@ -97,18 +97,18 @@ INSERT INTO Student (StudentID, Student_Name, Department, Email, DOB) VALUES
 -- Insert entries into Book issues table
 
 INSERT INTO Book_issues
-    -> (Issue_number, BookID, StudentID, Date_of_issue, Date_of_return, Returned_book)
-    -> VALUES
-    -> (1, 1, 201, '2026-01-05', '2026-01-12', 1),
-    -> (2, 2, 202, '2026-01-06', '2026-01-13', 1),
-    -> (3, 3, 203, '2026-01-07', '2026-01-14', 0),
-    -> (4, 4, 204, '2026-01-08', '2026-01-15', 1),
-    -> (5, 5, 205, '2026-01-09', '2026-01-16', 0),
-    -> (6, 6, 206, '2026-01-10', '2026-01-17', 1),
-    -> (7, 7, 207, '2026-01-11', '2026-01-18', 0),
-    -> (8, 8, 208, '2026-01-12', '2026-01-19', 1),
-    -> (9, 9, 209, '2026-01-13', '2026-01-20', 1),
-    -> (10, 10, 210, '2026-01-14', '2026-01-21', 0);
+    (Issue_number, BookID, StudentID, Date_of_issue, Date_of_return, Returned_book)
+    VALUES
+    (1, 1, 201, '2026-01-05', '2026-01-12', 1),
+    (2, 2, 202, '2026-01-06', '2026-01-13', 1),
+    (3, 3, 203, '2026-01-07', '2026-01-14', 0),
+    (4, 4, 204, '2026-01-08', '2026-01-15', 1),
+    (5, 5, 205, '2026-01-09', '2026-01-16', 0),
+    (6, 6, 206, '2026-01-10', '2026-01-17', 1),
+    (7, 7, 207, '2026-01-11', '2026-01-18', 0),
+    (8, 8, 208, '2026-01-12', '2026-01-19', 1),
+    (9, 9, 209, '2026-01-13', '2026-01-20', 1),
+    (10, 10, 210, '2026-01-14', '2026-01-21', 0);
 
 
 
